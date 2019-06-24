@@ -224,8 +224,9 @@ void main ()		//	main principal
                             sync_adc();
                             wakeup_adc();
                             adc_TH = adc_read_data();                       // recebe valor lido do adc
-/*
-                            desligar_receptor();        // Envia valor  das vari�veis
+			    
+			// Bloco para envia imediato após aquisicao do sinal				
+/*                            desligar_receptor();        // Envia valor  das vari�veis
                             // envia valor de tensao referente a temperatura do Peltier acoplado ao laser
                             uart_wr(adc_TH>>16);
                             uart_wr(adc_TH>>8);
